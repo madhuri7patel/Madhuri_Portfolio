@@ -1,0 +1,82 @@
+.InputContact {
+  width: 100%;
+  background: #dedede;
+  border-radius: 8px;
+  padding: 2px;
+  margin-bottom: 26px;
+  input,
+  textarea {
+    font-family: "Montserrat";
+    resize: none;
+    outline: none;
+    border: none;
+    width: calc(100% - 0.5px);
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 11px 32px 11px 32px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #171717;
+  }
+
+  ::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #949494;
+  }
+  :-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #949494;
+  }
+  ::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #949494;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #949494;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #949494;
+  }
+  &:focus-within {
+    background: linear-gradient(90.51deg, #02bee7 0%, #cd14eb 101.58%);
+  }
+  @media (max-width: 650px) {
+    padding: 1px;
+    input,
+    textarea {
+      width: calc(100% - 0.25px);
+      height: 40px !important;
+      border-radius: 7px;
+    }
+    textarea {
+      height: 181px !important;
+    }
+  }
+}

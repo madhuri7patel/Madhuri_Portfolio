@@ -1,0 +1,58 @@
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8.33vw;
+  padding-right: 6.11vw;
+  margin-bottom: 150px;
+
+  .fullSilde {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .halfSlide {
+    width: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .seeMore {
+    margin: 0 auto;
+    width: 157px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 80px;
+
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.09em;
+      color: #e9e9e9;
+    }
+  }
+
+  @media (max-width: 900px) {
+    margin-bottom: 100px;
+
+    .fullSilde {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+
+    .halfSlide {
+      width: 100%;
+    }
+  }
+}

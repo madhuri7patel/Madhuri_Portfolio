@@ -1,0 +1,122 @@
+.ProblemSolvingSlide {
+  width: 100%;
+  height: fit-content;
+  .part1 {
+    width: 100%;
+    height: fit-content;
+    .title {
+      width: fit-content;
+      height: fit-content;
+      padding-left: 11.25vw;
+    }
+    .container {
+      width: 100%;
+      height: fit-content;
+      padding: 0 8.125vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 36px;
+      .imageContainer {
+        width: 40.97vw;
+        max-width: 525px;
+        height: fit-content;
+      }
+      .detailsConatainer {
+        width: 37.84vw;
+        height: fit-content;
+        .detailsTitle {
+          font-weight: 500;
+          font-size: clamp(16px, 2.22vw, 32px);
+          line-height: 138%; /* 44px */
+          color: #fefefe;
+        }
+        .desc {
+          font-weight: 400;
+          font-size: clamp(14px, 1.11vw, 16px);
+          line-height: 175%; /* 28px */
+          color: #959392;
+        }
+        .boldlist {
+          font-weight: 400;
+          font-size: clamp(14px, 1.11vw, 16px);
+          line-height: 175%; /* 28px  171% mobile*/
+          color: #959392;
+          p {
+            margin-top: 21px;
+            .boldTitle {
+              font-weight: 500;
+              color: #e0e0e0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .iFrameContainer {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 158px 15.58vw 195px 15.58vw;
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+    }
+    .layerClicked {
+      display: none;
+    }
+    iframe {
+      width: 100%;
+      height: 43vw;
+      max-height: 650px;
+      border: none;
+    }
+  }
+  @media (max-width: 850px) {
+    .part1 {
+      margin-bottom: 80px;
+      .title {
+        padding-left: 32px;
+      }
+      .container {
+        padding: 0 32px;
+        flex-direction: column;
+        margin-top: 20px;
+        .imageContainer {
+          width: 100%;
+          max-width: 325px;
+          margin-bottom: 30px;
+        }
+        .detailsConatainer {
+          width: 100%;
+          .detailsTitle {
+            // line-height: 109%;
+          }
+          .desc {
+            line-height: 171%;
+          }
+        }
+      }
+    }
+    .iFrameContainer {
+      padding: 32px 34px;
+      background: #171717;
+      overflow: scroll;
+      margin-bottom: 80px;
+      iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 390px;
+        border: none;
+      }
+    }
+    .sliderContainer {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+}

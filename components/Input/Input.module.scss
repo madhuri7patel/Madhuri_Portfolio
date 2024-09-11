@@ -1,0 +1,88 @@
+.Input {
+  width: 100%;
+  margin-bottom: 73px;
+  .textAreaDiv {
+    width: 100%;
+    height: 83px;
+    .textArea {
+      width: 100%;
+      height: 81px;
+      overflow: scroll;
+      font-family: "Montserrat";
+      resize: none;
+      outline: none;
+      border: none;
+      background-color: #f2f2f2;
+      // overflow: hidden;
+      padding: 10px 9px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 31.2px;
+      color: #171717;
+      border-bottom: 2px solid #e0e0e0;
+      &:focus-within {
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(90.51deg, #02bee7 0%, #cd14eb 101.58%);
+        border-image-slice: 1;
+      }
+    }
+  }
+  input {
+    width: 100%;
+    height: 51px;
+    font-family: "Montserrat";
+    outline: none;
+    border: none;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    padding: 10px 9px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: #171717;
+    border-bottom: 2px solid #e0e0e0;
+    &:focus-within {
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(90.51deg, #02bee7 0%, #cd14eb 101.58%);
+      border-image-slice: 1;
+    }
+  }
+  ::placeholder {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.2px;
+    text-transform: capitalize;
+    color: #c4c4c4;
+  }
+
+  ::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.2px;
+    text-transform: capitalize;
+    color: #c4c4c4;
+  }
+  :-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.2px;
+    text-transform: capitalize;
+    color: #c4c4c4;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.2px;
+    text-transform: capitalize;
+    color: #c4c4c4;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.2px;
+    text-transform: capitalize;
+    color: #c4c4c4;
+  }
+}

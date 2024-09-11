@@ -1,0 +1,125 @@
+.LeftRightCommonContent {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .imageContainer {
+    width: 41.11vw;
+    max-width: 600px;
+    height: fit-content;
+  }
+  .detailsContainer {
+    width: 35.76vw;
+    max-width: 600px;
+    height: fit-content;
+    .title {
+      width: fit-content;
+      font-weight: 500;
+      font-size: clamp(16px, 2.22vw, 32px);
+      line-height: 138%; /* 44px */
+      color: #fefefe;
+    }
+    .listDescription {
+      width: 100%;
+      height: fit-content;
+      margin-top: 16px;
+      ul {
+        padding-left: 24px;
+        margin: 0;
+        list-style: none;
+        li::before {
+          content: "•";
+          // color: #ffffff;
+          display: inline-block;
+          width: 1.5em;
+          margin-left: -1.5em;
+        }
+        li {
+          padding: 0;
+          font-weight: 400;
+          font-size: clamp(14px, 1.11vw, 16px);
+          line-height: 28px;
+          color: #959392;
+          margin-bottom: 10px;
+          ::marker {
+            color: #ffffff;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .boldTitle {
+            font-weight: 500;
+            color: #e0e0e0;
+          }
+        }
+      }
+      .desc {
+        font-weight: 400;
+        font-size: clamp(14px, 1.11vw, 16px);
+        line-height: 175%; /* 28px */
+        color: #959392;
+      }
+
+      ul {
+        li {
+          font-weight: 400;
+          font-size: clamp(14px, 1.11vw, 16px);
+          line-height: 175%; /* 28px  171% mobile*/
+          color: #959392;
+        }
+      }
+    }
+  }
+  .normalDescContainer {
+    width: 37.84vw;
+    max-width: 620px;
+    .listDescription {
+      margin-top: 0px;
+    }
+  }
+}
+.reversed {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 850px) {
+  .LeftRightCommonContent {
+    flex-direction: column;
+    align-items: flex-start;
+    .imageContainer {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .detailsContainer {
+      width: 100%;
+      margin-top: 20px;
+      .title {
+        line-height: 138%; /* 44px */
+      }
+      .listDescription {
+        margin-top: 12px;
+        ul {
+          li {
+            line-height: 28px;
+            margin-bottom: 8px;
+          }
+        }
+        .desc {
+          line-height: 175%; /* 28px */
+        }
+      }
+    }
+    .normalDescContainer {
+      width: 100%;
+      max-width: 620px;
+      .listDescription {
+        margin-top: 4px;
+      }
+    }
+  }
+  .reversed {
+    flex-direction: column;
+  }
+}

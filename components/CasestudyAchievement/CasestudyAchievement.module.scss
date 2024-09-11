@@ -1,0 +1,50 @@
+.CasestudyAchievement {
+  width: 100%;
+  height: fit-content;
+  padding: 0 8.125vw 199px 8.125vw;
+  .details {
+    margin-top: 48px;
+    .row {
+      width: 47.36vw;
+      max-width: 700px;
+      margin-bottom: 47px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .title {
+        font-weight: 500;
+        font-size: clamp(16px, 2.22vw, 32px);
+        line-height: 138%; /* 44px */
+        color: #fefefe;
+      }
+      .desc {
+        font-weight: 500;
+        font-size: clamp(14px, 1.11vw, 16px);
+        line-height: 175%; /* 28px */
+        color: #959392;
+      }
+
+      ul {
+        li {
+          font-weight: 400;
+          font-size: clamp(14px, 1.11vw, 16px);
+          line-height: 175%; /* 28px  171% mobile*/
+          color: #959392;
+        }
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    padding: 0 32px 80px 32px;
+    .details {
+      margin-top: 20px;
+      .row {
+        width: 100%;
+        margin-bottom: 20px;
+        .title {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}

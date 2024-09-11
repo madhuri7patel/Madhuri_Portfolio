@@ -1,0 +1,265 @@
+.SingleCasestudySlide1 {
+  width: 100%;
+  height: fit-content;
+  padding: 0 8.125vw;
+  padding-bottom: 152px;
+  .upperSection {
+    display: flex;
+    justify-content: space-between;
+    .titleSection {
+      width: 57.77vw;
+      height: fit-content;
+      .smallTitle {
+        width: fit-content;
+        font-weight: 500;
+        font-size: clamp(14px, 1.11vw, 16px);
+        line-height: 175%;
+        text-transform: uppercase;
+        color: #676767;
+        margin-bottom: 15px;
+      }
+      .mainTitle {
+        font-weight: 500;
+        font-size: clamp(40px, 3.61vw, 52px);
+        line-height: 122%; /* or 66px */
+        color: #ffffff;
+
+        .colorText {
+          color: #2d8aa7;
+        }
+      }
+    }
+    .deliverables {
+      width: fit-content;
+      height: fit-content;
+      padding-right: 6.31vw;
+      .title {
+        font-weight: 400;
+        font-size: clamp(12px, 1.11vw, 16px);
+        line-height: 175%; /* or 28px */
+        text-transform: uppercase;
+        color: #676767;
+      }
+      .ul {
+        margin-top: 21px;
+        margin-bottom: 0;
+        padding-left: 0px;
+        .li {
+          padding: 0;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 34px; /* or 246% */
+          text-wrap: nowrap;
+          white-space: nowrap;
+          color: #ffffff;
+          list-style-position: inside;
+        }
+      }
+    }
+  }
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 25px;
+    margin-bottom: 97px;
+    .mainImage {
+      width: 100%;
+      height: fit-content;
+      object-fit: contain;
+      // .backgroundImage {
+      //   display: block;
+      // }
+    }
+    .mockupImage {
+      width: 41.18vw;
+      max-width: 600px;
+      height: auto;
+      position: absolute;
+      bottom: -17%;
+      left: -1.5%;
+    }
+    .mobileMockupImage {
+      width: 36.59vw;
+      max-width: 483px;
+      height: auto;
+      position: absolute;
+      top: 17%;
+      left: 5.45%;
+    }
+  }
+  .details {
+    width: 42.56vw;
+    margin-left: auto;
+    .detailTitle {
+      font-weight: 400;
+      font-size: clamp(16px, 2.22vw, 32px);
+      line-height: 138%; /* 44px */
+      color: #fefefe;
+    }
+    .detailSmallTitle {
+      width: fit-content;
+      font-weight: 500;
+      font-size: clamp(14px, 1.53vw, 22px);
+      line-height: 109%; /* 24px */
+      color: #959392;
+      margin-top: 9px;
+      margin-bottom: 22px;
+    }
+    .description {
+      font-weight: 400;
+      font-size: clamp(14px, 1.11vw, 16px);
+      line-height: 175%; /* 28px  171% mobile*/
+      color: #959392;
+    }
+    .boldlist {
+      font-weight: 400;
+      font-size: clamp(14px, 1.11vw, 16px);
+      line-height: 175%; /* 28px  171% mobile*/
+      color: #959392;
+      p {
+        .boldTitle {
+          font-weight: 500;
+          color: #e0e0e0;
+        }
+      }
+    }
+    .buttonContainer {
+      display: flex;
+      width: fit-content;
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 11.5px 19px;
+        width: fit-content;
+        height: 48px;
+        background: #000000;
+        border: 1px solid #222222;
+        border-radius: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-right: 25px;
+        :last-child {
+          margin-right: 0;
+        }
+
+        .svg {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .btnText {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 0 32px;
+    padding-bottom: 80px;
+    .upperSection {
+      flex-direction: column;
+      .titleSection {
+        width: 100%;
+        .smallTitle {
+          line-height: 19px;
+          margin-bottom: 16px;
+        }
+        .mainTitle {
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+      .deliverables {
+        padding-right: 0;
+        margin-top: 20px;
+        .title {
+          font-weight: 500;
+          line-height: 133%;
+        }
+      }
+    }
+    .imageContainer {
+      margin-top: 40px;
+      margin-bottom: 11.23vw;
+      .mainImage {
+        height: 51.28vw;
+        min-height: 200px;
+        background: #05303e;
+        border-radius: 12px;
+        .backgroundImage {
+          display: none;
+        }
+      }
+      .mockupImage {
+        width: 100%;
+        max-width: 650px;
+        bottom: -12%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .mobileMockupImage {
+        width: 36.59vw;
+        max-width: 483px;
+        height: auto;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .details {
+      width: 100%;
+      margin-left: 0;
+      .detailTitle {
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .detailSmallTitle {
+        font-weight: 600;
+        margin-top: 6px;
+        margin-bottom: 8px;
+      }
+      .description {
+        line-height: 171%;
+      }
+
+      .buttonContainer {
+        @media (max-width: 330px) {
+          display: block;
+        }
+        .button {
+          padding: 10px;
+          width: fit-content;
+          height: 40px;
+          border: 0.61px solid #222222;
+          border-radius: 6.15px;
+          margin-top: 16px;
+          .svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .btnText {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16.37px;
+          }
+        }
+      }
+    }
+  }
+}

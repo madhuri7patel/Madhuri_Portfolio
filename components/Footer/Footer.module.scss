@@ -1,0 +1,136 @@
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #18181b;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-left: 8.33vw;
+  padding-right: 6.11vw;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-top: 200px;
+
+  .absoluteSection {
+    margin-top: -150px;
+    background-color: #112466;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .heading {
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 53px;
+      width: 546px;
+      text-align: center;
+    }
+
+    .btns {
+      display: flex;
+      margin-top: 50px;
+
+      .btn {
+        width: 180px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+
+        p {
+          margin-right: 10px;
+        }
+
+        .btnText {
+          color: #112466;
+        }
+      }
+    }
+  }
+
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+
+    .links {
+      display: flex;
+
+      a {
+        margin-right: 20px;
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .hoverDiv {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 600px) {
+    height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .absoluteSection {
+      margin-top: -100px;
+      border-top-left-radius: 70px;
+      border-top-right-radius: 70px;
+      width: 100%;
+      height: 180px;
+
+      .heading {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+      }
+
+      .btns {
+        display: flex;
+        margin-top: 50px;
+
+        .btn {
+          width: 150px;
+          height: 40px;
+
+          p {
+            margin-right: 10px;
+          }
+
+          .btnText {
+            color: #112466;
+          }
+        }
+      }
+    }
+
+    .footerContent {
+      margin-top: 40px;
+      .links {
+        a {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

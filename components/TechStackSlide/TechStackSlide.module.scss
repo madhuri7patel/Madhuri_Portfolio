@@ -1,0 +1,153 @@
+.TechStackSlide {
+  width: 100%;
+  height: fit-content;
+  padding: 0 11.25vw;
+  display: flex;
+  .title {
+    width: fit-content;
+    height: fit-content;
+    text-wrap: nowrap;
+    white-space: nowrap;
+  }
+  .mainContainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin: 0 auto;
+    .stackContainer {
+      width: 172px;
+      height: 394px;
+      position: relative;
+      .stack1,
+      .stack2,
+      .stack3,
+      .stack4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        filter: drop-shadow(0px 26px 18.1px rgba(0, 0, 0, 0.55));
+        .desktopBox {
+          display: block;
+        }
+        .mobileBox {
+          display: none;
+        }
+        .text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+        }
+      }
+      .stack2 {
+        top: 94px;
+        z-index: 3;
+      }
+      .stack3 {
+        top: 188px;
+        z-index: 2;
+      }
+      .stack4 {
+        top: 282px;
+        z-index: 1;
+      }
+    }
+    .techContainer {
+      padding-top: 8px;
+      margin-left: 13.61vw;
+      height: 390px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .row {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .techBox {
+          width: fit-content;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          margin-right: 17px;
+          .logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 7.5px;
+          }
+          .techBoxTitle {
+            width: fit-content;
+            height: fit-content;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    padding: 0;
+    flex-direction: column;
+    .title {
+      padding-left: 32px;
+    }
+    .mainContainer {
+      margin-top: 36px;
+      margin-left: 32px;
+
+      .stackContainer {
+        width: 106px;
+        height: 250px;
+        .stack1,
+        .stack2,
+        .stack3,
+        .stack4 {
+          .desktopBox {
+            display: none;
+          }
+          .mobileBox {
+            display: block;
+          }
+          .text {
+            font-size: 11px;
+            line-height: 13.41px;
+          }
+        }
+        .stack2 {
+          top: 60px;
+        }
+        .stack3 {
+          top: 120px;
+        }
+        .stack4 {
+          top: 180px;
+        }
+      }
+      .techContainer {
+        margin-left: 32px;
+        height: 250px;
+        width: fit-content;
+        .row {
+          flex-wrap: wrap;
+          gap: unset;
+          .techBox {
+            margin-right: 24px;
+            .techBoxTitle {
+              font-size: 12px;
+              line-height: 14.63px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

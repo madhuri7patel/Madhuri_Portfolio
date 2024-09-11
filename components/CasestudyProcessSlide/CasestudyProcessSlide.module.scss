@@ -1,0 +1,64 @@
+.CasestudyProcessSlide {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 236px 8.125vw 199px 11.25vw;
+  .details {
+    width: 47.43vw;
+    max-width: 682px;
+    height: fit-content;
+    .title {
+      font-weight: 500;
+      font-size: clamp(18px, 2.225vw, 32px);
+      line-height: 138%; /* 44px */
+      color: #fefefe;
+    }
+    .subTitle {
+      font-weight: 400;
+      font-size: clamp(14px, 1.53vw, 22px);
+      line-height: 109%; /* 24px */
+      color: #959392;
+      margin-bottom: 21px;
+    }
+    .desc {
+      font-weight: 400;
+      font-size: clamp(14px, 1.115vw, 16px);
+      line-height: 175%; /* 28px */
+      color: #959392;
+    }
+
+    .boldlist {
+      margin-top: 21px;
+      font-weight: 400;
+      font-size: clamp(14px, 1.11vw, 16px);
+      line-height: 175%; /* 28px  171% mobile*/
+      color: #959392;
+      p {
+        margin-bottom: 21px;
+        .boldTitle {
+          font-weight: 500;
+          color: #e0e0e0;
+        }
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    flex-direction: column;
+    padding: 80px 32px;
+    .details {
+      width: 100%;
+      margin-top: 24px;
+      .title {
+        line-height: 124%;
+      }
+      .subTitle {
+        margin-bottom: 8px;
+        line-height: 171%;
+      }
+      .desc {
+        line-height: 171%;
+      }
+    }
+  }
+}
