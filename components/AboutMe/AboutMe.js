@@ -34,8 +34,8 @@ const AboutMe = () => (
     <div className={styles.leftContainer}>
       <p className={styles.description}>Hi there,</p>
       <p className={styles.description}>
-        I'm Madhuri Patel, a full-stack developer with a passion for creating impactful
-        applications.
+        {`I'm Madhuri Patel, a full-stack developer with a passion for creating impactful
+        applications.`}
       </p>
       <div className={styles.boxContainer}>
         {numberBoxes.map((box, index) => (
