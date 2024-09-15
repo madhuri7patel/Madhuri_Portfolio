@@ -33,12 +33,12 @@ const OurWork = ({}) => {
       socialIconsPageRef={null}
     >
       <Head>
-        <title>Projects | Chirag Gupta</title>
+        <title>Projects | Madhuri Patel</title>
         <meta
           name="description"
           content="A full-stack developer with a passion for creating impactful applications"
         />
-        <meta property="og:title" content="Portfolio | Chirag Gupta" />
+        <meta property="og:title" content="Portfolio | Madhuri patel" />
         <meta
           property="og:description"
           content="A full-stack developer with a passion for creating impactful applications"
@@ -48,7 +48,7 @@ const OurWork = ({}) => {
         {/* Workvio */}
         <div className={styles.fullSlide}>
           <PothWrap
-            alt="workvio | Chirag Gupta"
+            alt="workvio | Madhuri Patel"
             path={'4vH24vgTZra0f5sFohdpox'}
             width="425px"
             img={workvio}
@@ -61,7 +61,7 @@ const OurWork = ({}) => {
         <div className={styles.fullSlide}>
           <div className={styles.halfSlide}>
             <PothWrap
-              alt="The Stock App | Chirag Gupta"
+              alt="The Stock App | Madhuri Patel"
               path={'1CZqBYDCHalKAQw3Iea3tC'}
               width="100%"
               img={stock}
@@ -71,7 +71,7 @@ const OurWork = ({}) => {
           </div>
           <div className={styles.halfSlide}>
             <PothWrap
-              alt="MyLee | Chirag Gupta"
+              alt="MyLee | Madhuri Patel"
               path="6XHPgqFqACsa3aVw1kfhYf"
               width="425px"
               img={mylee}
@@ -84,7 +84,7 @@ const OurWork = ({}) => {
         <div className={styles.fullSlide}>
           <div className={styles.halfSlide}>
             <PothWrap
-              alt="4PLAY | Chirag Gupta"
+              alt="4PLAY | Madhuri Patel"
               path={'3rQ1u4kIrrC2EFDM8eipO0'}
               width="425px"
               img={FourPlay}
@@ -94,7 +94,7 @@ const OurWork = ({}) => {
           </div>
           <div className={styles.halfSlide}>
             <PothWrap
-              alt="Dicipl | Chirag Gupta"
+              alt="Dicipl | Madhuri Patel"
               path={'4jEch2qMcQFplNykeyOlR6'}
               width="425px"
               img={dicipl}
@@ -107,7 +107,7 @@ const OurWork = ({}) => {
         <div className={styles.fullSlide}>
           <div className={styles.halfSlide}>
             <PothWrap
-              alt="VENDCO | Chirag Gupta"
+              alt="VENDCO | Madhuri Patel"
               path={'eDQ1IEGWVKlpcq08JP0Tb'}
               width="425px"
               img={vendco}

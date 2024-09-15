@@ -21,7 +21,7 @@ export default function Home() {
           name="description"
           content="A full-stack developer with a passion for creating impactful applications"
         />
-        <meta property="og:title" content="Portfolio | Chirag Gupta" />
+        <meta property="og:title" content="Portfolio | Madhuri Patel" />
         <meta
           property="og:description"
           content="A full-stack developer with a passion for creating impactful applications"

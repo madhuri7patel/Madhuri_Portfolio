@@ -23,7 +23,7 @@ const Projects = () => {
     <div className={styles.projects} id="projects">
       <div className={styles.fullSilde}>
         <PothWrap
-          alt="Workvio | Chirag Gupta"
+          alt="Workvio | Madhuri Patel"
           path="4vH24vgTZra0f5sFohdpox"
           width="100%"
           img={workvio}
@@ -34,7 +34,7 @@ const Projects = () => {
       <div className={styles.fullSilde}>
         <div className={styles.halfSlide}>
           <PothWrap
-            alt="MyLee | Chirag Gupta"
+            alt="MyLee | Madhuri Patel"
             path="6XHPgqFqACsa3aVw1kfhYf"
             width="425px"
             img={mylee}
@@ -45,7 +45,7 @@ const Projects = () => {
         <div className={styles.halfSlide}>
           <PothWrap
             img={dermetologist}
-            alt="4PLAY | Chirag Gupta"
+            alt="4PLAY | Madhuri Patel"
             path={'3rQ1u4kIrrC2EFDM8eipO0'}
             width="425px"
             title="4PLAY"

@@ -36,13 +36,13 @@ const IndividualProject = ({
     <HomeLayout page={2} ScrollTrigger={ScrollTrigger} isDark={true} ref={scroller}>
       <Head>
         <title>
-          {heroSectionData.colorText} | {heroSectionData.mainTitle} | Chirag Gupta
+          {heroSectionData.colorText} | {heroSectionData.mainTitle} | Madhuri Patel
         </title>
         <meta
           name="description"
           content="A full-stack developer with a passion for creating impactful applications"
         />
-        <meta property="og:title" content="Portfolio | Chirag Gupta" />
+        <meta property="og:title" content="Portfolio | Madhuri Patel" />
         <meta
           property="og:description"
           content="A full-stack developer with a passion for creating impactful applications"
